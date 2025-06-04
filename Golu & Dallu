@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I LOVE YOU SUMI 😘😘</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f8cdda, #1d2b64);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .question-box, .letter-box, .no-message {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      display: none;
+    }
+
+    .question-box {
+      display: block;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #ffb6c1;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      margin: 10px 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 120px;
+    }
+
+    button:hover {
+      background-color: #ff85c1;
+    }
+
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+      font-style: italic;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.6em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      button {
+        width: 100px;
+        padding: 10px 16px;
+        font-size: 0.9em;
+      }
+
+      .question-box, .letter-box, .no-message {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Initial Question -->
+  <div class="question-box" id="questionBox">
+    <h1>Do you love me, Sumi? 😍</h1>
+    <button onclick="showLetter()">Yes ❤️</button>
+    <button onclick="showNoMessage()">No ❌</button>
+  </div>
+
+  <!-- If she clicks YES -->
+  <div class="letter-box" id="letterBox">
+    <h1>I LOVE YOU SUMI 😘😘</h1>
+    <p><strong>To My Dearest Sumi,</strong></p>
+
+    <p>From the moment we started talking, something in me changed. It was as if my heart recognized you before my mind did. I don’t know exactly when it happened—but somewhere between our messages, calls, and the little laughs we’ve shared, I fell in love with you, deeply and truly.</p>
+
+    <p>Even though we are miles apart—you in Dubai and I here in Nepal—not a single day goes by without me thinking about you. Distance has tested us, yes, but it has also shown me how strong my feelings for you really are. Loving you has been the most natural and beautiful thing I’ve ever done.</p>
+
+    <p>Sumi, you have brought peace to my chaos and light to my dark days. Your voice calms me, your words give me hope, and your presence—even through a screen—makes me feel at home. I know we haven’t yet held each other in person, but I feel your soul, and that’s more powerful than anything physical.</p>
+
+    <p>So today, with all my heart, I want to ask you something very special.</p>
+
+    <p style="font-size: 1.3em; color: #ffb6c1;"><strong>Will you marry me?</strong></p>
+
+    <p>I want to build a life with you, no matter how long the wait or how far the distance. I want to be the one who stands beside you through every challenge, who celebrates your joy and wipes your tears. I want to wake up every morning knowing you’re mine—not just in words or promises, but in the sacred bond of marriage.</p>
+
+    <p>I may not have riches to offer, but I can promise you endless love, deep respect, unwavering loyalty, and a lifetime of togetherness. You are the one I want to grow old with, the one I want to laugh with, travel with, cry with, and build dreams with.</p>
+
+    <p class="signature">Yours forever,<br><strong>Golu</strong></p>
+  </div>
+
+  <!-- If she clicks NO -->
+  <div class="no-message" id="noMessage">
+    <h1>There is no option like "NO" 😤</h1>
+    <p>We have a 2-year contract, Runchiiii 😘😘😘😘 <br>Whether you say yes or no… <strong>you are mine, just mine</strong> okay? 😂😂😂</p>
+  </div>
+
+  <!-- Background music (lofi) -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_1cfb53ad34.mp3?filename=lofi-study-112191.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function showLetter() {
+      document.getElementById('questionBox').style.display = 'none';
+      document.getElementById('letterBox').style.display = 'block';
+    }
+
+    function showNoMessage() {
+      document.getElementById('questionBox').style.display = 'none';
+      document.getElementById('noMessage').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
